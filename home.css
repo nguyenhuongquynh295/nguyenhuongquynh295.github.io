@@ -151,8 +151,13 @@ header{
 }
 
 .contact i {
+    cursor: pointer;
     padding: 20px;
     color: #D8D8D8;
+}
+.contact i:hover {
+   background: #333;
+   color:#F5AE51;
 }
 .left-side.left-side-show {
     width: 100%;
