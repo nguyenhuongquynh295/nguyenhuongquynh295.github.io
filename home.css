@@ -384,7 +384,7 @@ h1#portfolio-title {
     color: #D8D8D8;
     width: auto;
     text-align: center;
-    height: 40px;
+    height: auto;
     /* line-height: 40px; */
 }
 .section-right .item-2,.item-1{
@@ -476,4 +476,11 @@ h1#portfolio-title {
     .cv-img{
         height: 43vh !important;
     } 
+    .all{
+        font-size:10px;
+    }
+    .porfolio-choice {
+        margin-bottom: 20px;
+    }
 }
+
