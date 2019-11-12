@@ -142,11 +142,12 @@ header{
 
 .contact {
     z-index: 5;
-    margin-left: 50px;
+    /* margin-left: 50px; */
     bottom: 5%;
     position: absolute;
     display: flex;
-    width: auto;
+    width: 100%;
+    justify-content: center;
 }
 
 .contact i {
