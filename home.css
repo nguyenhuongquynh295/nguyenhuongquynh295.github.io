@@ -1,16 +1,15 @@
-* {
+*{
     padding: 0;
     margin: 0;
 }
 .cv-img {
-    
     background-attachment: unset;
     margin: 0 auto;
     background-image: url(./img/cv.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 70%;
-    height: 200vh;
+    width: 100%;
+    height: 168vh;
     background-position: center;
 }
 .main-cv{
@@ -64,8 +63,6 @@ header{
 
 }
 .menu-body{
-	display: flex;
-	flex-wrap: none;
 	width:100%;
 	
 	height: 70%;
@@ -119,12 +116,13 @@ header{
 	height: 300px;
 }
 .introduce-detail-img{
+    width:100%;
 	text-align:center;
 	font-weight: bold;;
 	font-size:30px;
 	color:#F5AE51;
-	top: 80%;
-    left: 38%;
+	top: 90%;
+    left: 50%;
 	transform: translate(-50%,-50%);
 	z-index: 10;
 	position: absolute;
@@ -134,94 +132,13 @@ header{
 	font-weight: bold;;
 	font-size:24px;
 	color:#F5AE51;
-	top:95%;
+	top:100%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	z-index: 10;
 	position: absolute;
 }
-.cv-side{
-	/* background-position: center;
-	background-size: cover;
-	background-image: url("./img/cv.jpg"); */
-}
-html,
-body {
-    bottom:0;
-    top: 0;
-    left: 0;
-    right: 0;
-    position: fixed;
-}
 
-.section {
-    position: relative;
-    max-width: 100%;
-    height: auto;
-}
-
-.slide {
-    width: auto;
-    height: auto;
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-
-.load-bar {
-    background: rgb(235, 229, 229);
-    height: 3px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    z-index: 2;
-    transform: translateX(-100%);
-}
-
-
-
-.pop-up-show {
-    transform: translateX(0);
-}
-
-.hv {
-    background: #20232D;
-    width: 70%;
-    height: 100%;
-}
-
-.tg {
-    transform-origin: 100% 0%;
-    background: #20232D;
-    width: 30%;
-    height: 115%;
-    border-right: 100px;
-    transform: rotate(20deg);
-    box-sizing: border-box;
-    padding-right: 2px;
-    border-right: 3px solid black;
-    transition: 0.5s;
-}
-
-.tg-show {
-    transform: rotate(0);
-}
-
-.left-side {
-    transition: 1.5s;
-    opacity: 0;
-    z-index: 4;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-
-.left-side-show {
-    background: #333;    opacity: 1;
-}
 
 .contact {
     z-index: 5;
@@ -236,38 +153,27 @@ body {
     padding: 20px;
     color: #D8D8D8;
 }
-
-.logo {
-    opacity: 1;
-    width: auto;
-    height: auto;
-    z-index: 4;
-    font-size: 100px;
-    margin-left: 70px;
-    color: #D8D8D8;
+.left-side.left-side-show {
+    width: 100%;
+    height: 100%;
 }
-
-.launch {
-    font-size: 20px;
-    margin-top: 50px;
-    color: #D8D8D8;
-    margin-left: 70px;
-}
-
-.launch h1 {
-    margin-bottom: 20px;
-    font-size: 40px;
-    font-weight: bold;
+.frnt-end {
+    margin-top:-20px;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: #333;
 }
 h1:after {
+    width: 100%;
     text-transform: uppercase;
-    opacity: 0.3;
+    opacity: 0.2;
     content: "MY CV";
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size: 68px;
+    font-size: 85px;
     color: #333;
     z-index: 2;
     letter-spacing: normal;
@@ -282,14 +188,15 @@ h1 {
     font-size: 48px;
 }
 .side-button {
-    margin-top: 3%;
+    margin-top: 30px;
+    height: 30%;
     display: flex;
 }
-.side-button-main{
+.side-button-main {
     justify-content: space-around;
     display: flex;
-    width:20%;
-    margin:0 auto;
+    width: auto;
+    margin: 0 auto;
 }
 
 .left-button:hover,
@@ -299,31 +206,33 @@ h1 {
 }
 
 .right-button ,.left-button{
+    padding: 10px;
+    box-sizing: border-box;
     /* background: #00c8aa; */
     cursor: pointer;
     border-radius: 50%;
     font-weight: bold;
     color: #D8D8D8;
-    width: 35%;
+    width: 100%;
     height: 50px;
     text-align: center;
     align-items: center;
     padding-top: 10px;
     transition: 0.5s;
 }
-
+.right-button{
+    margin-left:10px;
+}
+.left-button{
+    margin-right:10px;
+}
 .right-side {
-    scroll-behavior: unset;
-    overflow-y: scroll;
-    width: 55%;
-    position: absolute;
-    height: 100%;
-    right: 0;
+
+    width: 100%;
+  height: 100%;
     z-index: 4;
     background: rgb(255, 254, 251);
-    transform-origin: 100% 50%;
-    transform: scaleX(0);
-    transition: 0.5s;
+   
 }
 
 .right-side-show {
@@ -463,18 +372,20 @@ h1#portfolio-title {
     font-size:12px;
 
 }
-.all{
+.all {
+    box-sizing: border-box;
+    padding: 10px;
     cursor: pointer;
     margin: 25px;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
-    color:#D8D8D8;
-    width: 10%;
+    color: #D8D8D8;
+    width: auto;
     text-align: center;
-        height: 40px;
-        line-height: 40px;
+    height: 40px;
+    /* line-height: 40px; */
 }
 .section-right .item-2,.item-1{
     justify-content: center;
@@ -538,62 +449,31 @@ h1#portfolio-title {
 .main-scale-after{
     display: none;
 }
-@media (max-width:1368px) {
-    html,
-    body {
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        position: relative;
-    }
-    .slide img {
-        width: 100%;
-        height: 670px;
-    }
-    .right-side {
-        overflow-y: unset;
-        position: relative;
-        width: 100%;
-        height: 1000px;
-        background: #FFF;
-        transform: scaleX(1);
-    }
-    .frnt-end {
-        position: relative;
-        width: 100%;
-        height: 670px;
-    }
-    .pop-up {
-        width: 100%;
-        transform: translateX(0);
-    }
-    .tg {
-        transform: rotate(0);
-    }
-    .lauch {
-        width: 100%;
-    }
-    .left-side {
-        overflow: hidden;
-        width: 100%;
-    }
-    
-}
-@media (max-width:1128px) {
-    .introduce-detail-img{
-        left: 35% ;
-    }
-}
-@media (max-width:768px) {
-.cv-img{
-    height: 56vh;
-
-}
-}
-@media (max-width:1024px) {
+@media only screen and (max-width: 1168px) {
     .cv-img{
-        height: 46vh;
-    
+        height: 106vh !important;
+        }
+}
+@media only screen and (max-width:1023px) {
+    .cv-img{
+        height: 143vh !important;
     }
+}
+@media only screen and (max-width: 768px) {
+    .cv-img{
+        height: 106vh !important;
     }
+}
+@media only screen and (max-width: 578px) {
+    .cv-img{
+        height: 78vh !important;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .introduce-detail-img {
+        font-size: 25px;
+    }
+    .cv-img{
+        height: 43vh !important;
+    } 
+}
