@@ -41,6 +41,17 @@
                 $(".item-2-1 img").removeClass("scale-img");
             }
             )
+            $(".item-3-1").hover(function () {
+                $(".item-3-1 img").removeClass("scale-img");
+                var k = $(this).index();
+                $(".item-3-1 img").eq(j).addClass("scale-img");
+                $(".item-3-1-after").eq(j).addClass("item-hover-after");
+
+            }, function () {
+                $(".item-3-1-after").removeClass("item-hover-after");
+                $(".item-3-1 img").removeClass("scale-img");
+            }
+            )
             $(".item-1-1").hover(function () {
                 $(".item-1-1 img").removeClass("scale-img");
                 var i = $(this).index();
@@ -58,12 +69,13 @@
                 $(".porfolio-choice").children().removeClass("all-focus");
                 $(".porfolio-choice").children().eq(i).addClass("all-focus");
                 if (i == 0) {
+                    $(".item-3").removeClass("item-none");
                     $(".item-2").removeClass("item-none");
                     $(".item-1").removeClass("item-none");
                 }
-                if (i == 1) { $(".item-2").addClass("item-none"); $(".item-1").removeClass("item-none"); }
-                if (i == 2) { $(".item-1").addClass("item-none"); $(".item-2").removeClass("item-none"); }
-
+                if (i == 1) { $(".item-2").addClass("item-none"); $(".item-1").removeClass("item-none"); $(".item-3").addClass("item-none"); }
+                if (i == 2) { $(".item-1").addClass("item-none"); $(".item-2").removeClass("item-none"); $(".item-3").addClass("item-none"); }
+                if (i == 3) { $(".item-2").addClass("item-none"); $(".item-1").addClass("item-none"); $(".item-3").removeClass("item-none"); }
             })
             setInterval(() => {
                 $(".left-button").addClass('left-button-add');
@@ -150,7 +162,8 @@
             </div>
         </div>
         <div class="contact">
-            <i class="fab fa-facebook-f fa-2x" onclick="window.open('https://www.facebook.com/nguyenhuongquynh295')"></i>
+            <i class="fab fa-facebook-f fa-2x"
+                onclick="window.open('https://www.facebook.com/nguyenhuongquynh295')"></i>
             <i class="fab fa-instagram fa-2x" onclick="window.open('https://www.instagram.com/huongquynh2905/')"></i>
             <i class="fab fa-telegram-plane fa-2x" onclick="window.open('./img/chan-4.png')"></i>
             <i class="fab fa-pinterest fa-2x" onclick="window.open('./img/chan-4.png')"></i>
@@ -172,6 +185,7 @@
                     <div class="all">ALL</div>
                     <div class="all">BLANKET</div>
                     <div class="all">T-SHIRST</div>
+                    <div class="all">LOGO-BRAND</div>
                 </div>
 
                 <div class="item-1">
@@ -270,8 +284,38 @@
                                 ./img/thun-8.jpg" width="200px" height="200px" />
                     </div>
                     <div class="item-2-1">
-                        <div class="item-2-1-after" onclick="window.open('./img/thun-9.jpg')"></div><img src="
-                                ./img/thun-9.jpg" width="200px" height="200px" />
+                        <div class="item-2-1-after" onclick="window.open('./img/thun-9.jpg')"></div><img
+                            src="./img/thun-9.jpg" width="200px" height="200px" />
+                    </div>
+                </div>
+                <div class="item-3">
+                    <div class="item-3-1">
+                        <div class="item-3-1-after" onclick="window.open('./img/poster-1.jpg')"></div><img src="
+                        ./img/poster-1.jpg" width="200px" height="200px" />
+                    </div>
+                    <div class="item-3-1">
+                        <div class="item-3-1-after" onclick="window.open('./img/poster-4.jpg')"></div><img src="
+                        ./img/poster-4.jpg" width="200px" height="200px" />
+                    </div>
+                    <div class="item-3-1">
+                        <div class="item-3-1-after" onclick="window.open('./img/poster-2.jpg')"></div><img src="
+                        ./img/poster-2.jpg" width="200px" height="200px" />
+                    </div>
+                    <div class="item-3-1">
+                        <div class="item-3-1-after" onclick="window.open('./img/poster-3.jpg')"></div><img src="
+                        ./img/poster-3.jpg" width="200px" height="200px" />
+                    </div>
+                    <div class="item-3-1">
+                        <div class="item-3-1-after" onclick="window.open('./img/logo-1.png')"></div><img src="
+                        ./img/logo-1.png" width="200px" height="200px" />
+                    </div>
+                    <div class="item-3-1">
+                        <div class="item-3-1-after" onclick="window.open('./img/logo-2.png')"></div><img src="
+                        ./img/logo-2.png" width="200px" height="200px" />
+                    </div>
+                    <div class="item-3-1">
+                        <div class="item-3-1-after" onclick="window.open('./img/logo-3.png')"></div><img src="
+                        ./img/logo-3.png" width="200px" height="200px" />
                     </div>
                 </div>
             </div>
@@ -279,7 +323,7 @@
         <div class="footer-right">
             <div class="phone"><i class="fas fa-phone fa-2x"></i>
                 </br>Phone: (+84) 0393217272 </br>
-               </div>
+            </div>
             <div class="andress"><i class="fas fa-map-marker-alt fa-2x"></i></br> Thanh Nhan, </br>
                 Hai Ba Trung , Ha Noi</div>
             <div class="mail"><i class="fas fa-envelope-open fa-2x"></i> </br>nguyenhuongquynh295@gmail.com </br>

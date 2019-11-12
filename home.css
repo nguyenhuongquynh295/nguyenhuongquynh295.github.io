@@ -394,7 +394,7 @@ h1#portfolio-title {
     height: auto;
     /* line-height: 40px; */
 }
-.section-right .item-2,.item-1{
+.section-right .item-2,.item-1,.item-3{
     justify-content: center;
 
     transition: 0.5s;
@@ -403,7 +403,7 @@ h1#portfolio-title {
     align-items: center;
     background: #333;margin:0 auto;
 }
-.section-right .item-2-1,.item-1-1{
+.section-right .item-2-1,.item-1-1,.item-3-1{
     cursor: pointer;
     box-sizing:border-box;
     padding:5px;
@@ -411,6 +411,7 @@ h1#portfolio-title {
    position: relative;
    z-index: 1;
 }
+
 .item-none{
     display: none !important;
     transition: 0.5s;
@@ -418,7 +419,7 @@ h1#portfolio-title {
 .scale-img{
    transform: scale(1.2);
 }
-.item-1-1-after,.item-2-1-after{
+.item-1-1-after,.item-2-1-after,.item-3-1-after{
     width: 200px;
     content: "";
     height: 200px;
@@ -434,7 +435,7 @@ h1#portfolio-title {
    bottom: 5px;
    transition: 0.3s;
 }
-.item-2-1-after::before,.item-1-1-after::before {
+.item-2-1-after::before,.item-1-1-after::before,.item-3-1-after::before {
     content: "Click On Image";
     color: #FFF;
     text-align: center;
@@ -462,6 +463,9 @@ h1#portfolio-title {
     width:33%;
 }
 @media only screen and (max-width: 1168px) {
+    .porfolio-choice{
+        display: block;
+    }
     .cv-img{
         height: 106vh !important;
         }
