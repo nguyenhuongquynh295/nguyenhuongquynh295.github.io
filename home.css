@@ -2,11 +2,22 @@
     padding: 0;
     margin: 0;
 }
-*{
-	margin:0;
-	padding:0;	
+.cv-img {
+    
+    background-attachment: unset;
+    margin: 0 auto;
+    background-image: url(./img/cv.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 200vh;
+    background-position: center;
 }
+.main-cv{
+    background: #E9EBEE;
+    border-left: 5px solid #333;
 
+}
 header{
 	background-image: url("./img/909823.jpg");
 	max-width:100%;	
@@ -87,7 +98,7 @@ header{
 	height: 100%;
 	font-size:18px;
 	color:#D8D8D8;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Source Serif Pro", serif;
 }
 .main-img{
 	position: relative;
@@ -237,7 +248,6 @@ body {
 }
 
 .launch {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     margin-top: 50px;
     color: #D8D8D8;
@@ -249,7 +259,28 @@ body {
     font-size: 40px;
     font-weight: bold;
 }
-
+h1:after {
+    text-transform: uppercase;
+    opacity: 0.3;
+    content: "MY CV";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 68px;
+    color: #333;
+    z-index: 2;
+    letter-spacing: normal;
+}
+h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    z-index: 4;
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 60px;
+    font-size: 48px;
+}
 .side-button {
     margin-top: 3%;
     display: flex;
@@ -284,7 +315,6 @@ body {
 .right-side {
     scroll-behavior: unset;
     overflow-y: scroll;
-    border-left: 5px solid #00c8aa;
     width: 55%;
     position: absolute;
     height: 100%;
@@ -309,8 +339,8 @@ body {
 .section-right {
   
     /* text-align: center; */
-    font-family: cursive;
-    margin-bottom: 20px;
+    font-family: "Source Serif Pro", serif;
+        margin-bottom: 20px;
 }
 
 
@@ -393,12 +423,11 @@ body {
     text-align: center;
     color: #2A2B30;
 }
-h1 {
-    margin-top: 40px;
-}
+
 .portfolio-cv{
-    font-family: "Open Sans", sans-serif;
-    display: flex;
+    border-left: 5px solid #F5AE51;
+    font-family: "Source Serif Pro", serif;
+        display: flex;
     flex-wrap: wrap;
     align-items: center;
     background: #333;

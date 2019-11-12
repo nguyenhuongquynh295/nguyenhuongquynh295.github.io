@@ -24,6 +24,12 @@
                     scrollTop: ($(".portfolio-cv").offset().top)
                 }, 1000);
             })
+            $(".left-button").click(function () {
+                var target = $(this).attr('href');
+                $('html, body').animate({
+                    scrollTop: ($(".main-cv").offset().top)
+                }, 1000);
+            })
             $(".item-2-1").hover(function () {
                 $(".item-2-1 img").removeClass("scale-img");
                 var j = $(this).index();
@@ -280,7 +286,9 @@
                 <h1>MY CV</h1>
             </div>
             <div class="section-right">
-                <div class="main-cv"></div>
+                <div class="main-cv">
+                    <div class="cv-img"></div>
+                </div>
             </div>
             <div class="section-right">
                 <div class="portfolio-cv">
